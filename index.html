@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Егоров Иван</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li class="header_item ">
+                    <a href="#home" class="header_link about">О себе</a>
+                </li>
+                <li class="header_item">
+                    <a href="#skills" class="header_link">Умения</a>
+                </li>
+                <li class="header_item">
+                    <a href="#galery" class="header_link">Галерея</a>
+                </li>
+                <li class="header_item">
+                    <a href="#contacts" class="header_link">Контакты</a>
+                </li>
+            </ul>
+            <hr>
+        </nav>
+        <hr>
+    </header>
+    <main class="main">
+        <section class="home">
+            <a name="home"></a>
+            <div class="home_info">
+                <h1 class="home_title">Егоров Иван Андреевич</h1>
+                <p class="home_description">
+                    Студент третьего курса Югорского государственного университета.
+                </p>
+            </div>
+            <div class="home_img">
+                <img src="./img/home_img.jpg" alt="My photo" class="home_img" width="940">
+            </div>
+        </section>
+        <section class="skills">
+            <a name="skills"></a>
+            <h2 class="skills_title">Умения:</h2>
+            <ul>
+                <li class="skills_description">Уверенный пользователь Microsoft Office</li>
+                <li class="skills_description">Оператор ДНГ,</li>
+                <li class="skills_description">Учёт и ведение суточной сводки по добыче нефти или проходке</li>
+                <li class="skills_description">Ведение документации по ОТ и ПБ</li>
+                <li class="skills_description">Пусть удача не подводит,
+                    За тобою следом ходит,
+                    Не теряй в глазах огня!
+                    С 23 Февраля!</li>
+                </ul>
+        </section>
+        <section class="galery">
+            <a name="galery"></a>
+            <h2>Галерея:</h2>
+            <table class="galery_table">
+                    <td>
+                        <img class="galery_img" src="img/21.jpg"  width="255" height="255" alt="ЮГУ">
+                    </td>
+                    <td>
+                        <img class="galery_img" src="img/22.jpg"  width="255" height="255" alt="ЮГУ">
+                    </td>
+                </tr> 
+            </table>
+        </section>
+
+    </main>
+    <footer class="contacts">
+        <a name="contacts"></a>
+        <h2 class="contacts_title">Контакты</h2>
+        <ul class="header_list">
+            <li class="header_item">Телефон: +7(0000)000000</li>
+            <li class="header_item">Почта: Vanycha_95@mail.ru</li>
+            <li class="header_item">ВК: <a href="https://vk.com/id280998787"><img src="../website_building/img/7.jpg" height="100" width="100"></a></li>
+            <li class="header_item">Telegram: <a href="https://t.me/abbavar">@Egorov</a></li>
+        </ul>
+        <h2>
+            <div id="qwe"></div>
+            <script type="text/javascript">
+                function clock() {
+                    var d = new Date();
+                    var str_date = d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear()+"<br>"+(d.getHours()+1)+":"+d.getMinutes()+":"+d.getSeconds()+"";
+                    document.getElementById("qwe").innerHTML = str_date;
+                    setTimeout("clock()", 1);
+                }
+            </script>
+            <script type="text/javascript">
+                clock();
+            </script>
+            </h2>
+</body>
+</html>
